@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import AddPage from '../pages/AddPage';
 import App from '../App';
 import DetailPage from '../pages/DetailPage';
+import ArchivePage from '../pages/ArchivePage';
+import NotFoundPage from '../pages/NotFound';
 
 function NoteApp() {
   return (
@@ -14,6 +16,8 @@ function NoteApp() {
           <Route path='/' element={<App />} />
           <Route path='/notes/new' element={<AddPage />} />
           <Route path='/notes/:id' element={<DetailPage />} />
+          <Route path='/archives' element={<ArchivePage />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </main>
     </div>

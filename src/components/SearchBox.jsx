@@ -14,7 +14,7 @@ function SearchBox({ keyword, keywordChange }) {
   );
 }
 
-SearchBox.PropTypes = {
+SearchBox.propTypes = {
   keyword: PropTypes.string.isRequired,
   keywordChange: PropTypes.func.isRequired,
 };
