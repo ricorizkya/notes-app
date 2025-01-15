@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBox from '../components/SearchBox';
 import NoteItem from '../components/NoteItem';
 import { useParams } from 'react-router-dom';
-import { getActiveNotes, getAllNotes } from '../utils/local-data';
+import { getActiveNotes } from '../utils/local-data';
 import NoteLists from '../components/NoteList';
 
 function HomePageWrapper() {
