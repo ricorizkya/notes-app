@@ -17,6 +17,7 @@
   --on-background: #333333;
   --on-background-grey: #6d6d6d;
   --on-surface: #333333;
+  --theme-logo: #000000;
 }
 
 * {
@@ -68,6 +69,27 @@ main {
 
 header .archive-title {
   font-size: x-large;
+}
+
+header .logout-logo {
+  font-size: x-large;
+  color: red;
+}
+
+header .theme-logo {
+  font-size: x-large;
+  color: var(--theme-logo);
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+header .locale-set {
+  font-size: x-large;
+}
+
+header .settings {
+  flex-direction: row;
+  align-items: center;
 }
 
 .notes-list {
@@ -299,6 +321,27 @@ header .archive-title {
   font-size: 28px;
   cursor: pointer;
   color: var(--on-background);
+}
+
+.text-title {
+  font-size: 48px;
+  margin-bottom: 28px;
+}
+
+.confirm-pass {
+  color: red;
+  margin-top: 12px;
+}
+
+main .title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+main .title-container span {
+  font-size: x-large;
 }
 
 @media screen and (min-width: 650px) {
